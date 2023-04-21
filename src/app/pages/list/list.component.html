@@ -1,8 +1,7 @@
-<p>list works!</p>
 <div class="list">
-  <input class="form-control", type="text", placeholder="buscar una carta">
+  <input class="form-control" type="text" placeholder="buscar una carta">
   <div class="cards">
-    <app-card *ngFor="let card of [1,2,3,4,5]"></app-card>
+    <app-card *ngFor="let card of cards" [card]="card"></app-card>
   </div>
 </div>
 
